@@ -88,81 +88,157 @@ Implementa las dependencias necesarias para para el funcionamiento del component
 ![image](https://github.com/user-attachments/assets/cdc9617f-5c9b-479a-981b-9face0fef777)
 
 ###  Footer  
-Define el componente de pie de página personalizado dentro de la aplicación. Este componente es utulizado para mostrar información relevante del sistema.
+Define el componente de pie de página personalizado dentro de la aplicación. Este componente es utilizado para mostrar información relevante del sistema mediante una barra inferior dentro de la página.
 
 #### Código de estilos CSS  
-Estilo CSS que proporciona propiedades de color, radio y tamaño del tipo de letra
+Estilo CSS que proporciona propiedades de color, radio y tamaño del tipo de letra  
 
 ![image](https://github.com/user-attachments/assets/1892b965-f3f4-44ea-8111-61392831c45b)
 
 #### Código de Archivo HTML  
-
+Es implementada la estructura "mat-card" para la construcción de un pie de página el cual muestra el mensaje "Todos los derechos reservados ITO" además de un logo correspondiente.
 
 ![image](https://github.com/user-attachments/assets/ea422a60-9a8c-407b-9f41-19ef8adc1443)
 
 #### Código de Componente  
-
+El código se encarga de representar el pie de página en la aplicación, configura las propiedades básicas del elemento, permite su uso como plantilla en etiqueta HTML
 
 ![image](https://github.com/user-attachments/assets/8d41e78e-514c-43c8-b43a-1680f8ed359a)
 
 ###  Header  
+Corresponde al elemento de encabezado, proporciona información y funcionalidad para la selección dentro de un menú, así como la foto de perffl.
 
 #### Código de estilos CSS  
+El código define estilos especificos para el encabezado, estableciendo un tono azul con degradado, así como una forma circular para la imagen del usuario
+
+![image](https://github.com/user-attachments/assets/37f14fdc-463e-4ef3-8fef-1ae6acd91dd2)
 
 #### Código de Archivo HTML  
+Define la estructura del encabezado haciendo uso de los componentes mat-card y mat-card-content de la paquetería de Angular Material, implementando la estructura <app - menu> para el uso de componente de un menú de navegación
+
+![image](https://github.com/user-attachments/assets/497d4db0-5257-4cb9-9280-4133a16312b1)
 
 #### Código de Componente  
+Define la gestión de operaciones del encavezado, incluye funcionalidade para la obtencion de una lista de usuairos 
+
+![image](https://github.com/user-attachments/assets/e58da92e-6a09-4e0a-ab00-b199a57d448e)
 
 ###  Menu  
-
-#### Código de estilos CSS  
-
 #### Código de Archivo HTML  
+Define un menú desplegable interactivo, conntiene diferentes acciones, haciendo uso de mat-icon-button y mat-menu para su construcción; Es generaado un botón flotante que al ser presionado es mostrado un emnú interactivo 
+
+![image](https://github.com/user-attachments/assets/d412dcfd-47d7-4e2c-8010-b3f1d9f1b3fd)
 
 #### Código de Componente  
+Componente que implementa operaciones para la navegación entre distintas rutas de la aplicación, de acuerdo a la opción seleccionada por el usuario, permitiendo la navegación entre las pantallas de: Usuarios, Home, Comidas y Login.
+
+![image](https://github.com/user-attachments/assets/86f52355-964a-4162-a273-09e6b664264d)
 
 ###  Comidas-details  
-
 #### Código de estilos CSS  
+Define el estido del cuadro de dialogo encargado de mostrar las características principales de la comida seleccionada, el contenido del cuadro de díalo contiene un fondo azul, diseño redondeado con una imagen central circular 
 
-#### Código de Archivo HTML  
+![image](https://github.com/user-attachments/assets/1d1eccbe-652c-4888-b08d-26c5dc983932)
 
 #### Código de Componente  
+Componente utilizado para mostrar los detalles de un elemento de la lista de comidas, esto dentro de un cuadro de diálogo, incluyendo una imagen, nombre, ingredientes y precio, implementando un botón central de cerrar para mayor facilidad al usuario
 
-###  Componentes Específicos
+![image](https://github.com/user-attachments/assets/34b42eed-db63-463c-be65-a2d0ef4c6952)
 
-#### Código de estilos CSS  
-
-#### Código de Archivo HTML  
-
-#### Código de Componente  
+![image](https://github.com/user-attachments/assets/c378ca98-4b65-4558-abc2-9a7734e52088)
 
 ###  Usuarios-details  
-
 #### Código de estilos CSS  
+Al igual que "comidas-details" son definidas los estilos correspondientes a la personalización del contendio del cuadro de diálogo donde serán mostrados todas las características de un usuario específico, implementando un fondo azul de tonalidad clara con una imagen central para idenificación de la persona.  
 
-#### Código de Archivo HTML  
+![image](https://github.com/user-attachments/assets/ea2a52df-a8ce-45ab-a6ef-132768db76a0)
 
 #### Código de Componente  
+Define el componente utilizado para mostrar los detalles de un usuario dentro del cuadro de diálogo, empleando la paquetería de Angular Material para proporcionar una interfaz atractiva al usuario.
 
-## Servicios Generados   
+![image](https://github.com/user-attachments/assets/6ab68b8c-0338-4c66-869b-f1300b19e8c5)
 
+![image](https://github.com/user-attachments/assets/a443efa6-710a-42ee-9792-a737a125cfc0)
+
+### Modulos Específicos     
+#### Comidas-Lista  
+Define la plantilla para mostrar la lista de platillos dentro de una tabla, incluyendo una barra de filtrado, columnas correspondientes con el ID del platillo, nombre, ingredientes, categoría, precio, imagen y botones de acción para la eliminación, edición o ver los detalles del registro.
+
+##### Código CSS  
+![image](https://github.com/user-attachments/assets/bdc39f50-f658-4213-b56e-d6c55f4dc0ba)
+
+##### Código HTML  
+![image](https://github.com/user-attachments/assets/80d6015d-ec5a-4fc8-a885-fe387eb0eb0f)
+
+##### Código de Componente   
+efine la gestión de la lista de platillos, funcionalidad del filtro, busqueda y acciones sobre los platillos, permite el filtro mediante cartegorías especificas, nombre, o precui, así como operaciones como ver los detalles de la comida haicendo uso de otros componentes, eliminación de la comida y edición de esta. haciendo uso de llamadas de actualizacón, eliminación y obtención en la API.  
+![image](https://github.com/user-attachments/assets/72f527a0-d924-4609-9eb5-805ba5e77f17)
+
+Es utilizado el componente "MatTableDataSourse" para la gestión y visualización de los datos en la tabla, aplicando la paginacipon y ordenado para facilitar la navegación y clasificación de los datos  
+![image](https://github.com/user-attachments/assets/28816d88-37c0-4c93-b4c2-ef20c631cea0)
+
+#### Comidas-Edit  
+El componente permite editar los detalles de una comida seleccionada, cada uno de los campos está vinculado al objeto data de tipo comida, haciendo uso de la directiva ngModel para el enlace entre el modelo y la vista. Cuando el usuario decide guardar los cambios, se muestra un mensaje de confirmación. si esta es afirmativa los cambios se envían de vuelta al componente.
+
+Si el usuario opta por cancelar la operacion se cierra sin realizar operaciones.
+
+##### Código CSS  
+![image](https://github.com/user-attachments/assets/d937d974-ad96-4f4a-86af-329c25cb16c2)
+
+##### Código de Componente   
+![image](https://github.com/user-attachments/assets/06f2d222-95d1-4121-b760-0e25e633bbe3)
+
+#### Usuarios-Lista  
+Componente correspondiente a la página de administración de la lista de usuarios mediante una tabla, permitiendo realizar la busqueda, ver detalles, o eliminar registros. La página ucenta con una estructura de fondo gradiente, aplicando estilos a los elementos.   
+La tabla incluye elementos pacomo lo son: Id, Nombre, Apellidos, Corro, Foto, Detalles y un apartado de acciones, que permite, editar o eliminar el registro, además es incluido un elemento de paginación que permite ajustar los tamaños de página a 20,50 y 100 elementos.
+
+![image](https://github.com/user-attachments/assets/081d4dad-5d5d-46af-99ee-26397a6d07da)
+
+##### Código CSS  
+![image](https://github.com/user-attachments/assets/b850421f-6757-4418-9145-8ba6f5803fce)
+
+##### Código HTML  
+![image](https://github.com/user-attachments/assets/6ea33d17-3598-4dd7-a24b-225d2919a0dc)
+
+##### Código de Componente   
+![image](https://github.com/user-attachments/assets/1445cde0-4864-4796-b58c-5406dfcaccc5)
+
+#### Usuarios-Edit  
+Consiste en la implementación para la edición de un usuario. Permite realizar la edición de todos los atributos, se hace uso de la instrucción PUT para el envió de datos al bakcend donde es realizada la operación de corrección retornando un mensaje de exito o fallo.
+
+##### Código CSS  
+![image](https://github.com/user-attachments/assets/23d96d1d-1c29-42f7-91f5-6d38d08a774b)
+
+##### Código de Componente   
+![image](https://github.com/user-attachments/assets/3ff8ac47-60f7-4980-bb06-8ceb7c29e864)
+
+## Servicios Generados     
 ###  Comida  
+Servicio que se encarga de la gestión de las solicitudes HTTP hacia el backend para realizar operaciones sobre las comidas, hace uso del cliente HTTP de Angular para enviar y recibir datos desde el servidor  
+Se tiene una URL definida para la API de comidas en el backend Http://127.0.0.1:8000/api/comidas. Siendo este el punto de acceso al que se hará n las solicitudes para obtener, actualizar o eliminar registros.   
+Dentro del servicio se hacen solicitues HTTP de tipo GET para obtener las comidas desde el backend, obteniendo respuesta  en un objeto que contendra la lista de todas las comidas en formato JSON. Así mismo se hace una solicitud de tipo PUT para actualizar una comida existente y finalmente se puede realizar una solicitud de tipo DELETE para eliminar una comida 
 
-#### Código de estilos CSS  
+![image](https://github.com/user-attachments/assets/7224a442-a991-455c-90fa-a5c26432d6cb)
 
-#### Código de Archivo HTML  
-
-#### Código de Componente  
 
 ###  Usuarios  
+Servicio que interactua con el backend para realizar operaciones sobre los usuarios, implementa HttpClient para realizar solicitures HTTP, permitiendo realizar acciones como la eliminación, edición y obtención de usuarios a través de la API del backend  
+Permite realizar solicitudes HTTP de tipo DELETE al servidor para la eliminación de un suario, PUT para la actualización de sus datos y GET para obtener la lista de todos los usuarios registrados 
 
-#### Código de estilos CSS  
+![image](https://github.com/user-attachments/assets/3be4233b-d5c4-4da5-ba74-436c435d8990)
 
-#### Código de Archivo HTML  
+###  Global de Usuarios  
+Gestiona la información global del usuario, como su nombre y la URL de su imagen, almacena estos datos y proporciona métodos para establecer y obtener la información. Cualquier componente puede hacer uso del servicio para acceder o modificar la URL y nombre del usuario, sin necesidad de pasarlos como propiedades entre componentes 
 
-#### Código de Componente  
+![image](https://github.com/user-attachments/assets/f4f60855-543c-42a3-98ad-ded9c2a51367)
 
 # 3.- Datos Recuperados
+
+## Correos y Contraseñas recuperados  
+![image](https://github.com/user-attachments/assets/91d92ec4-f9f0-42d7-82aa-7d9d7f7cd74f)
+
+
+## Comidas Recuperadas  
+![image](https://github.com/user-attachments/assets/a80137ba-23e6-4ffd-a56a-9c8bd0465f85)
 
 
